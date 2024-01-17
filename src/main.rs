@@ -2,7 +2,7 @@ use clap::{App, Arg, SubCommand};
 use std::process::Command;
 
 fn main() {
-    let matches = App::new("lim")
+    let matches = App::new("lin")
         .version("1.0")
         .author("Cheng Lim")
         .about("Cheng's command line toolkit")
@@ -11,12 +11,9 @@ fn main() {
                 .about("Executes git commands")
                 .arg(
                     Arg::with_name("message")
-                        .short('m')
-                        .long("message")
-                        .value_name("MESSAGE")
                         .help("Sets the commit message")
-                        .takes_value(true)
-                        .required(true),
+                        .required(true)
+                        .index(1),
                 ),
         )
         .get_matches();
