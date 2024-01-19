@@ -14,8 +14,15 @@ This command performs `git add .`, `git commit -m "<message>"`, and `git push or
 # Single word message
 lin g <word1>
 
+# Example
+lin g add_css_file
+
+
 # Multiple word message
 lin g '<word1 word2 word3>'
+
+# Example
+lin g 'add css file'
 ```
 
 # License
